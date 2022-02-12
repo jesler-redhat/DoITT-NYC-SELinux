@@ -1,0 +1,906 @@
+=  =
+
+= Preface =
+
+== Confidentiality, Copyright, and Disclaimer ==
+
+This is a customer-facing document between Red Hat, Inc. and NY DoITT (“Client”).
+
+Copyright © 2022 Red Hat, Inc. All Rights Reserved. No part of the work covered by the copyright herein may be reproduced or used in any form or by any means – graphic, electronic, or mechanical, including photocopying, recording, taping, or information storage and retrieval systems – without permission in writing from Red Hat except as is required to share this information as provided with the aforementioned confidential parties.
+
+This document is not a quote and does not include any binding commitments by Red Hat. If acceptable, a formal quote can be issued upon request, which will include the scope of work, cost, and any customer requirements as necessary.
+
+This Consulting Engagement Report (CER) contains both Red Hat Confidential Information and Client Confidential Information subject to the confidentiality terms of the agreement governing the Services provided by Red Hat.
+
+== Audience ==
+
+This document is intended for Client technical staff responsible for the environment.
+
+== Additional Background and Related Documents ==
+
+This document does not contain step by step details of installation or other tasks, as they are covered in the relevant documentation on http://access.redhat.com/. Links to the appropriate documents will be made when required.
+
+== Scripts and playbooks ==
+
+Any scripts provided are being provided as-is, without any form of support or warranty.<br />
+All provided scripts can be modified by the customer at will.
+
+== Customer satisfaction survey (CSat) ==
+
+Red Hat is committed to a quality customer experience and continuous improvement in our services. Your feedback is the most important factor in determining if we’ve met your expectations and what we can do to improve. You will be receiving a customer satisfaction survey at the conclusion of our engagement. Please take just a few minutes to provide us with an honest snapshot of your experience. In the meantime, if there are any areas of concern, issues or problems on the project, please don’t hesitate to reach out to TODO_name_of_RH_engagement_project_manager.
+
+= Project Information =
+
+== Originator ==
+
+Red Hat Consulting
+
+== Owner ==
+
+Red Hat Services
+
+== Document Conventions ==
+
+=== Admonitions and Call-Outs ===
+
+<div class="note">
+
+Additional detail about a topic will be called out with the &quot;info&quot; symbol.
+
+
+</div>
+<div class="tip">
+
+Tips and advice will appear with a &quot;lightbulb&quot; admonition.
+
+
+</div>
+<div class="warning">
+
+Warnings and strong recommendations will appear next to a caution exclamation.
+
+
+</div>
+<div class="important">
+
+Crucial advice and information will be appear next to a red exclamation.
+
+
+</div>
+=== Single-line Commands and Code ===
+
+If instructed to type a single command, it will be displayed in a monospace font and highlighted like this example:
+
+<code>ipa -vvv cert-find --all</code>
+
+=== Multi-line Commands, Code / File Contents ===
+
+If instructed to type multi-line commands, create or modify code blocks and or file contents the information will be monospaced and placed in a callout box like this example:
+
+<syntaxhighlight lang="ruby">require 'sinatra'
+
+get '/hi' do
+  "Hello World!"
+end</syntaxhighlight>
+== Additional Copies ==
+
+To request additional copies of this Consulting Engagement Report, please contact the Red Hat Project Manager identified in [[#_participants_of_the_engagement|Participants of the Engagement]] section or your current Red Hat account team.
+
+== Participants of the Engagement ==
+
+=== Red Hat ===
+
+{|
+|+ Red Hat Participants
+!width="25%"| Name
+!width="33%"| Role
+!width="41%"| E-mail address
+|-
+| ''TODO''
+| Project Manager
+| ''TODO''
+|-
+| ''TODO''
+| Architect
+| ''TODO''
+|-
+| ''TODO''
+| Consultant
+| ''TODO''
+|}
+
+=== NY DoITT ===
+
+{|
+|+ DoITT Participants
+!width="25%"| Name
+!width="33%"| Role
+!width="41%"| E-mail address
+|-
+| ''TODO''
+| ''TODO''
+| ''TODO''
+|-
+| ''TODO''
+| ''TODO''
+| ''TODO''
+|}
+
+= Executive Summary =
+
+Red Hat Consulting was engaged by NY DoITT to assist with (''TODO'' high level description of project)
+
+= Overview =
+
+== About DoITT ==
+
+NY DoITT, is a (''TODO'' type organization)# focused on (''TODO'' main business goals). NY DoITT is best known for. (Or) The mission of NY DoITT is to: (''TODO'' mission).
+
+== Documentation Provided By DoITT ==
+
+{|
+|+ Documentation Provided by NY DoITT
+!width="31%"| Name
+!width="6%"| Version
+!width="31%"| Purpose
+!width="31%"| Customer Link or Location
+|-
+| ''TODO - Name''
+| ''TODO - Version''
+| ''TODO - Purpose''
+| ''TODO - Link or Location''
+|}
+
+== Purpose And Engagement Approach ==
+
+Red Hat Consulting was engaged by DoITT to assist with TODO_description_of_the_engagement which seeks to (''TODO'' describe what the initiative is meant to achieve) by (''TODO'' describe how this engagement is going to support the initiative).
+
+== Scope Summary ==
+
+This section details Red Hat’s strategy to assist DoITT with meeting their goals for this engagement. The following table outlines the focus of each phase.
+
+{|
+|+ Engagement Scope Summary
+!width="12%"| Sprint
+!width="25%"| Week
+!width="62%"| Objectives
+|-
+| 1
+| ''TODO''
+|
+* ''TODO''
+* ''TODO''
+|-
+| ''TODO''
+|
+* ''TODO''
+* ''TODO''
+|
+|-
+| 2
+| ''TODO''
+|
+* ''TODO''
+* ''TODO''
+|-
+| ''TODO''
+|
+* ''TODO''
+* ''TODO''
+|
+|}
+
+== Engagement Requirement Criteria ==
+
+{|
+!width="23%"| Requirement
+!width="76%"| Details
+|-
+| ''TODO''
+|
+* ''TODO''
+* ''TODO''
+|}
+
+= Implementation Details =
+
+== Journal ==
+
+{|
+!width="9%"| Date
+!width="45%"| Activities
+!width="45%"| Blockers
+|-
+| MM/DD/YYYY
+|
+* ''TODO''
+* ''TODO''
+|
+* ''TODO''
+* ''TODO''
+|}
+
+== Deployed Architecture ==
+
+''TODO'': The Architecture section contains headings that pertain to the solution as a whole. If you added specific technologies to the CER they will be appended at the end of this section for reference. Feel free to remove the top level headings that are already covered in the additional sections and are not generically relevant.
+
+=== High level Architecture diagram ===
+
+''TODO''
+
+=== Environment Setup ===
+
+Steps to prepare or create the environment for the proposed architecture
+
+''TODO''
+
+=== Continuous Integration/Continuous Delivery ===
+
+''TODO''
+
+=== Quality of Service Strategy ===
+
+The following considerations were made to ensure enterprise ready uptime
+
+==== High Availability ====
+
+''TODO''
+
+==== Failover ====
+
+''TODO''
+
+==== Disaster Recovery ====
+
+''TODO''
+
+=== Service Level Agreements and Volumetrics ===
+
+''TODO''
+
+=== Logging and Monitoring solution ===
+
+''TODO''
+
+=== Security considerations ===
+
+''TODO''
+
+=== Architectural Policies, Principles, and Decisions ===
+
+==== Policies ====
+
+Architectural policies are statements of ''how things will be done'', typically legally binding and imposed from outside the organization. The policies documented here were provided throughout the course of the engagement from various teams and key stakeholders and affected the documented Architectural Decisions.
+
+{|
+|+ ''TODO Policy Short Name''
+|width="25%"| '''Name'''
+|width="75%"| ''TODO''
+|-
+| '''Statement'''
+| ''TODO''
+|-
+| '''Source'''
+| ''TODO''
+|-
+| '''Implication'''
+| ''TODO''
+|}
+
+==== Principles ====
+
+Architectural principles are rules or guidelines at the organizational or team level used to make architectural decisions. The principles documented here were provided throughout the course of the engagement from various teams and key stakeholders and affected the documented Architectural Decisions.
+
+{|
+|+ ''TODO Principle Short Name''
+|width="25%"| '''Name'''
+|width="75%"| ''TODO''
+|-
+| '''Statement'''
+| ''TODO''
+|-
+| '''Source'''
+| ''TODO''
+|-
+| '''Motivation'''
+| ''TODO''
+|-
+| '''Implication'''
+| ''TODO''
+|}
+
+==== Decisions ====
+
+Architectural decisions made throughout the course of the engagement with information on the investigated alternatives and justification for the decisions made.
+
+{|
+|+ ''TODO Decision Short Name''
+|width="25%"| '''Id.'''
+|width="75%"| ''TODO''
+|-
+| '''Subject Area'''
+| ''TODO''
+|-
+| '''Architectural Question'''
+| ''TODO''
+|-
+| '''Issue or Problem'''
+| ''TODO''
+|-
+| '''Assumptions'''
+| ''TODO''
+|-
+| '''Alternatives'''
+| ''TODO''
+|-
+| '''Decision'''
+| ''TODO''
+|-
+| '''Justification'''
+| ''TODO''
+|-
+| '''Implications'''
+| ''TODO''
+|-
+| '''Agreeing Parties'''
+|
+{|
+!width="50%"| Person
+!width="50%"| Representing
+|-
+| ''TODO''
+| ''TODO''
+|-
+| ''TODO''
+| ''TODO''
+|}
+|}
+
+== Technical Implementation ==
+
+''TODO''
+
+== Validation Procedure ==
+
+''TODO''
+
+== Knowledge Transfer ==
+
+''TODO''
+
+{|
+|+ Working Sessions
+!width="10%"| Session
+!width="10%"| Date
+!width="60%"| Purpose / Attendees
+!width="20%"| Outputs
+|-
+| ''TODO - session title''
+| ''TODO - date''
+|
+* Purpose
+** ''TODO''
+** ''TODO''
+* Attendees
+** ''TODO''
+** ''TODO''
+|
+* ''TODO - outputs''
+* ''TODO - outputs''
+|}
+
+== Challenges, Resolutions, and Recommendations ==
+
+=== ''TODO_sample_challenge_name_1'' ===
+
+==== Challenge ====
+
+''TODO''
+
+==== Immediate Resolution ====
+
+''TODO''
+
+==== Future Recommendation ====
+
+''TODO''
+
+= Recommendations =
+
+== Technical Next Steps ==
+
+''TODO''
+
+== Relevant Training ==
+
+=== Red Hat Training ===
+
+Specific course descriptions and availability can be found on Red Hat’s website under Training and Certification. The following courses are recommended:
+
+==== Red Hat Learning Subscription ====
+
+Fill skills gaps and address business challenges by taking advantage of unlimited access to our comprehensive curriculum.
+
+For full details, or to enroll:<br />
+https://www.redhat.com/en/services/training/learning-subscription#tab.rhls.1
+
+==== Red Hat Skills Assessment ====
+
+Use the skills assessment tool to discover what training opportunities you may benefit from.
+
+For full details, or to enroll:<br />
+https://www.redhat.com/rhtapps/assessment
+
+==== Red Hat Enterprise Linux Courses ====
+
+===== Red Hat System Administration I (RH124) =====
+
+'''Course description'''
+
+The first of two courses covering the core system administration tasks needed to manage Red Hat Enterprise Linux servers
+
+Red Hat System Administration I (RH124) equips you with Linux® administration &quot;survival skills&quot; by focusing on foundational Linux concepts and core tasks. You will learn how to apply command-line concepts and enterprise-level tools, starting you on your journey toward becoming a full-time Linux system administrator. This path continues with the follow-on course, Red Hat System Administration II (RH134).
+
+This course is based on Red Hat® Enterprise Linux 8.2.
+
+'''Course content summary'''
+
+* Introduction to the command line
+* Managing physical storage
+* Install and configure software components and services
+* Establish network connections and control firewall restrictions
+* Monitor and manage running processes
+* Manage and secure files and file systems
+* Administer users and groups
+* Review the system log files and journal for issues
+* Troubleshoot problems and analyze systems with Red Hat Insights
+* Remotely manage systems with SSH and the Web Console
+
+'''Audience for this course'''
+
+This course is geared toward Windows system administrators, network administrators, and other system administrators who are interested in supplementing current skills or backstopping other team members, in addition to Linux system administrators who are responsible for these tasks:
+
+* Configuring, installing, upgrading, and maintaining Linux systems using established standards and procedures
+* Providing operational support
+* Managing systems for monitoring system performance and availability
+* Writing and deploying scripts for task automation and system administration
+
+'''Prerequisites for this course'''
+
+* Basic technical user skills with computer applications on some operating systems are expected.
+* Take our free assessment to gauge whether this offering is the best fit for your skills.
+
+For full details, or to enroll:<br />
+https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i
+
+===== Red Hat System Administration II (RH134) =====
+
+'''Course Description'''
+
+Focuses on the key tasks needed to become a full-time Linux administrator
+
+Red Hat System Administration II (RH134) serves as the second part of the RHCSA training track for IT professionals who have taken Red Hat System Administration I (RH124). The course goes deeper into core Linux system administration skills in storage configuration and management, installation and deployment of Red Hat® Enterprise Linux®, management of security features such as SELinux, control of recurring system tasks, management of the boot process and troubleshooting, basic system tuning, and command-line automation and productivity. .
+
+Experienced Linux administrators looking for rapid preparation for the RHCSA certification should instead start with RHCSA Rapid Track (RH199).
+
+This course is based on Red Hat Enterprise Linux 8.2.
+
+'''Course summary'''
+
+* Install Red Hat Enterprise Linux using scalable methods
+* Access security files, file systems, and networks
+* Execute shell scripting and automation techniques
+* Manage storage devices, logical volumes, and file systems
+* Manage security and system access
+* Control the boot process and system services
+* Running containers
+
+'''Audience for this course'''
+
+This course is geared toward Windows system administrators, network administrators, and other system administrators who are interested in supplementing current skills or backstopping other team members, in addition to Linux system administrators who are responsible for these tasks:
+
+* Configuring, installing, upgrading, and maintaining Linux systems using established standards and procedures
+* Providing operational support
+* Managing systems for monitoring system performance and availability
+* Writing and deploying scripts for task automation and system administration
+
+'''Recommended training'''
+
+* Successful completion of Red Hat System Administration I (RH124) is recommended.
+* Experienced Linux administrators seeking to accelerate their path toward becoming a Red Hat Certified System Administrator should start with the RHCSA Rapid Track course (RH199).
+* Take our free assessment to gauge whether this offering is the best fit for your skills.
+
+For full details, or to enroll:<br />
+https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii
+
+===== Red Hat Linux Automation with Ansible (RH294) =====
+
+'''Course description'''
+
+Learn how to automate Linux system administration tasks with Red Hat Ansible Automation Platform
+
+Red Hat Enterprise Linux Automation with Ansible (RH294) is designed for Linux system administrators and developers who need to automate provisioning, configuration, application deployment, and orchestration.
+
+This course is based on Red Hat® Enterprise Linux® 8.4 and Red Hat Ansible Automation Platform 1.2.
+
+'''Course content summary'''
+
+* Installing Red Hat Ansible Automation Platform on control nodes.
+* Creating and updating inventories of managed hosts and managing connections to them.
+* Automating administration tasks with Ansible Playbooks and ad hoc commands.
+* Writing effective playbooks at scale.
+* Protecting sensitive data used by Ansible Automation Platform with Ansible Vault.
+* Reusing code and simplifying playbook development with Ansible Roles and Ansible Content Collections.
+
+'''Audience for this course'''
+
+This course is geared toward Linux system administrators, DevOps engineers, infrastructure automation engineers, and systems design engineers who are responsible for these tasks:
+
+* Automating configuration management
+* Ensuring consistent and repeatable application deployment
+* Provisioning and deployment of development, testing, and production servers
+* Integrating with DevOps continuous integration/continuous delivery workflows
+
+'''Prerequisites for this course'''
+
+* Pass the Red Hat Certified System Administrator (RHCSA) exam (EX200), or demonstrate equivalent Red Hat Enterprise Linux knowledge and experience
+* Take our free assessment to gauge whether this offering is the best fit for your skills.
+
+For full details, or to enroll:<br />
+https://www.redhat.com/en/services/training/rh294-red-hat-linux-automation-with-ansible
+
+== Other ==
+
+''TODO''
+
+= Glossary =
+
+{|
+|+ General Terminology
+!width="27%"| Term
+!width="72%"| Definition
+|-
+| BZ
+| Bugzilla. This context refers to the specific instance of Bugzilla operated by Red Hat to track bugs, RFEs, and release information. Also, it may refer to a specific numbered Bugzilla bug when given with a definite article or number.
+|-
+| Case
+| Support Case, RH Case,A Red Hat support case, requested and prioritized by the client, then responded to directly by GSS staff. This case number is distinct from a BZ bug number (most RH support cases do not have a corresponding BZ and vice-versa).
+|-
+| DNS
+| Domain Name Service
+|-
+| Downstream
+| Refers toward “productized” deployable, supported artifact (signed binary) end of open source software development process and related contracted errata, event-based support artifacts, product engineering, and product-specific documentation.
+|-
+| FQDN
+| Fully Qualified Domain Name
+|-
+| GSS (a.k.a. CEE)
+| Red Hat Global Support Services (“support”) aka “Customer Experience and Engagement”. Able to resolve bugs, configuration problems, and shepherd RFEs.
+|-
+| KB
+| Knowledge Base article, a short and specific how-to guide available in the customer portal.
+|-
+| RFE
+| Request for Enhancement. These are requests from clients or RH engineering for new product functionality or behavior. Generally tracked internally as a BZ.
+|-
+| RHC
+| Red Hat Consulting. Able to provide on-site and remote engineering and analysis for solution creation.
+|-
+| RHEL
+| Red Hat Enterprise Linux
+|-
+| RPM
+| RPM Package Manager (a recursive acronym)
+|-
+| TAM
+| Technical Account Manager. A site-designated support resource manager from GSS that maintains site-specific knowledge, awareness, and drives resolution.
+|-
+| Upstream
+| Refers toward source-code origin end of open source software development process and related open source community collaboration, documentation, and testing.
+|}
+
+= Relevant Links =
+
+''TODO''
+
+= Statement of Work =
+
+''TODO''
+
+<dl>
+<dt>Main Task</dt>
+<dd><ol style="list-style-type: decimal;">
+<li><p>Subtask</p>
+<ol style="list-style-type: lower-alpha;">
+<li><p>Detail</p></li>
+<li><p>Detail</p></li></ol>
+</li></ol>
+</dd>
+<dt>Main Task</dt>
+<dd><ol style="list-style-type: decimal;">
+<li><p>Subtask</p>
+<ol style="list-style-type: lower-alpha;">
+<li><p>Detail</p></li>
+<li><p>Detail</p></li></ol>
+</li></ol>
+</dd></dl>
+
+= Revisions =
+
+{|
+|+ Document Revisions
+!width="12%"| Version
+!width="25%"| Date
+!width="62%"| Changes
+|-
+| 0
+| ''TODO''
+|
+* Initial Creation
+|-
+| ''TODO''
+| ''TODO''
+|
+* ''TODO''
+* ''TODO''
+|}
+
+= Red Hat Subscriptions Overview =
+
+Three factors play an important part in selecting the right RHEL subscription:
+
+* The (Service Level Agreement) SLA
+* The number of (physical) Sockets and,
+* The number of Virtual Machines.
+
+Red Hat Enterprise Linux can have layered products, like clustering. These require a separate subscription.
+
+== Service Level Agreement ==
+
+An important part of a subscription is access to Red Hat support. The SLA associated with a subscription plays an important part for the customer here as this defines response times.
+
+[[File:images/subscriptions/sla_response_time.png|thumb|none|alt=Service level agreement response times|Service level agreement response times]]
+
+== Socket Pairs ==
+
+A conventional RHEL subscription is based upon socket-pairs. A socket meant here is the ''physical'' CPU socket.
+
+Any subset of one or two sockets counts for one pair, so a node with 16 cores and two sockets requires one subscription to be compliant. A node with four sockets requires two single socket-pair subscriptions to be compliant.
+
+A node with one socket will then require one subscription to be compliant, and a node with three sockets will require two subscriptions.
+
+Of course, exceptions rule, so a node with four physical sockets of which only two have a seated CPU, will require just one subscription to be compliant.
+
+== Virtualization ==
+
+A conventional RHEL subscription can alternatively be used to subscribe RHEL virtual machines. The number of Virtual machines included with a subscription is two.
+
+One subscription which would apply to a ''physical'' dual socket machine can also be used for two Virtual Machines. The number of virtual sockets or vCPUs assigned to the two Virtual Machines being subscribed by a conventional RHEL subscription are not relevant.
+
+=== Virtual Datacenter Subscriptions ===
+
+Virtual Datacenter (VDC) Subscriptions differ from conventional RHEL subscriptions in that they subscribe VMs per hypervisor rather than individually.
+
+VDC subscriptions use a parent-child relationship to validate a VM’s subscription: the parent (the hypervisor) consumes a subscription while the children (the VMs running on that particular hypervisor) &quot;piggy back&quot; on that subscription. Any supported RHEL VMs running on a hypervisor with a valid VDC subscription have a valid subscription.
+
+Similar to conventional subscriptions, VDC subscriptions are applied to hypervisors per socket-pair. See [[#_socket_pairs|Socket Pairs]].
+
+<div class="note">
+
+A VDC subscription is only valid for the virtual machines running on a hypervisor, not for the hypervisor itself (the hypervisor must have a separate subscription for its own operating system).
+
+
+</div>
+== Layered products ==
+
+Layered products require the same SLA and number of socket-pairs as the RHEL OS these products are deployed upon.
+
+== Red Hat Enterprise Linux life cycle ==
+
+[[File:images/subscriptions/lifecycle_phases.png|thumb|none|alt=life cycle phases|life cycle phases]]
+
+The Life-cycle has different phases with different types of support. Depending on the applications, the deployment of nodes could be aligned with the different phases; deploy in Full Support, maintain in Maintenance Support 1 and replace in Maintenance Support 2 would be an ideal model.
+
+[[File:images/subscriptions/lifecycle_dates.png|thumb|none|alt=Life-cycle dates|Life-cycle dates]]
+
+The RHEL lifecycle can be found here:<br />
+https://access.redhat.com/support/policy/updates/errata
+
+= Engaging Red Hat Global Support Services =
+
+Red Hat® Support helps you get the most from your Red Hat subscriptions. Below, please find information about the Red Hat Customer Portal, Red Hat phone support, your personal points of contact, and how to contact sales and customer service.
+
+We’re always available to assist you. If at any time you are unable to reach your personal Red Hat Support contacts, you can find contact information below for the global support leadership team, which is available to assist upon your request.
+
+== Red Hat customer portal: [https://access.redhat.com/ access.redhat.com] ==
+
+The Red Hat Customer Portal is an award-winning digital platform that delivers enterprise product knowledge, subscription resources, and technical expertise that can only come from Red Hat. Use the Customer Portal to access our Knowledgebase of technical expertise, collaborate with peers and Red Hat experts, create, track, and manage your case activity, and much more.
+
+Use of the Customer Portal requires a login/password (linked to your RHN account). If you have any questions about your login and/or password, please contact your &lt;TAM or CSM&gt; if you have assigned.
+
+== Red Hat phone support: ==
+
+Red Hat technical support engineers are available through phone support to quickly troubleshoot and resolve problems. More information about your regional contact number and business hours can be found at: https://access.redhat.com/support/contact/technicalSupport.
+
+{|
+|+ RED HAT SUPPORT CONTACTS
+!width="18%"| TIER
+!width="36%"| CONTACT NAME &amp; INFORMATION<br />
+Phone: direct (D) mobile (M)
+!width="36%"| AVAILABILITY
+|-
+| 1
+| North America Production Support<br />
++888-GO-REDHAT<br />
+(+888-467-3342)<br />
+https://access.redhat.com/support/<sup>1</sup>
+| 24x7x365<br />
+Depending on severity as the first point of contact for Red Hat support.
+|-
+| 1
+| EMEA Production Support<br />
++800-GO-REDHAT<sup>1</sup><br />
+(+800 4673 3428)<br />
+https://access.redhat.com/support/<sup>1</sup>
+| 24x7x365<br />
+Depending on severity as the first point of contact for Red Hat support.
+|-
+| Additional Global Management Escalation Contacts can be found at:<br />
+https://access.redhat.com/support/policy/mgt_escalation/
+|
+|
+|}
+
+<sup>1.</sup> Use of the Customer Portal requires a Red Hat Network username &amp; password.<br />
+<sup>2.</sup> Press '''3''' for “RHEL”, then '''1''' for “Premium Support.” Inform the technician that you are with '''TODO_customer_portal_account_name''', account number '''TODO_customer_portal_account_number'''
+
+== Customer service ==
+
+In addition to Red Hat Support, Red Hat sales and customer service are available to assist you. If you have questions regarding sales, future product needs, or entitlements, please use the contact information provided below.
+
+{|
+|+ Customer service
+!width="33%"| CONTACT NAME &amp; INFORMATION
+!width="66%"| NOTES
+|-
+| Customer Service, North America<br />
+888-467-3342
+| For all questions related to your account, subscriptions, or entitlements, contact customer service, Visit<br />
+https://access.redhat.com/support/contact/customerService or global contact information.<br />
+Contact Technical Support for all technical questions or issues related to Red Hat products.
+|-
+| Customer Service, EMEA<br />
+Germany: 0800 1828065<br />
+France (Hors Dom-Tom): 0800907101<br />
+France (Dom-Tom): +353 212303445<br />
+UK: 0800 032 9515<br />
+Italy: 800 979 269<br />
+Spain &amp; Portugal: 900 811 831<br />
+All other countries: +353 21 2303 445<br />
+[mailto:customerservice-emea@redhat.com customerservice-emea@redhat.com]<br />
+|
+|-
+| RED HAT CUSTOMER PORTAL:<br />
+https://access.redhat.com<br />
+RED HAT PHONE SUPPORT:<br />
+1-888-GO-REDHAT (1-888-467-3342)
+| RECOMMENDATIONS FOR OPTIMAL SUPPORT EXPERIENCE:<br />
+https://access.redhat.com/articles/280093<br />
+TO ESCALATE A SUPPORT CASE:<br />
+https://access.redhat.com/support/escalation
+|}
+
+== Production support terms of service ==
+
+https://access.redhat.com/support/offerings/production/sla
+
+{|
+!width="10%"|
+!width="30%"| Self-support
+!width="30%"| Standard
+!width="10%"| Premium
+!width="20%"|
+|-
+| Hours of coverage
+| N/A
+| Standard business hours <sup>2</sup>
+| Standard business hours (24x7 for Severity 1 and 2) <sup>3</sup>
+|
+|-
+| Support channel
+| None
+| Web and phone
+| Web and phone
+|
+|-
+| Number of cases
+| N/A
+| Unlimited
+| Unlimited
+|
+|-
+| Response times
+| Initial and ongoing response
+| Initial and ongoing response
+| Initial response
+| Ongoing response
+|-
+| Severity 1
+| N/A
+| 1 business hour
+| 1 hour
+| 1 hour or as agreed
+|-
+| Severity 2
+| N/A
+| 4 business hours
+| 2 hours
+| 4 hours or as agreed
+|-
+| Severity 3
+| N/A
+| 1 business day
+| 4 business hours
+| 8 business hours or as agreed
+|-
+| Severity 4
+| N/A
+| 2 business day
+| 8 business hours
+| 2 business days or as agreed
+|}
+
+== Red Hat Support severity level definitions ==
+
+https://access.redhat.com/support/policy/severity/
+
+Opening a support case online can make it easier to share technical data, error messages, and system information with your Red Hat Support representative. Following the online submission with a phone call can reduce response time as well as potential errors in the capture of information.
+
+Red Hat recommends that you follow any Severity 1 and 2 online support case submissions with a phone call to your local support center.
+
+Red Hat Global Support Services uses the following definitions to classify issues:
+
+=== Severity 1 (urgent) ===
+
+A problem that severely impacts your use of the software in a production environment (such as loss of production data or in which your production systems are not functioning). The situation halts your business operations and no procedural workaround exists.
+
+=== Severity 2 (high) ===
+
+A problem where the software is functioning but your use in a production environment is severely reduced. The situation is causing a high impact to portions of your business operations and no procedural workaround exists.
+
+=== Severity 3 (medium) ===
+
+A problem that involves partial, non-critical loss of use of the software in a production environment or development environment. For production environments, there is a medium-to-low impact on your business, but your business continues to function, including by using a procedural workaround. For development environments, where the situation is causing your project to no longer continue or migrate into production.
+
+=== Severity 4 (low) ===
+
+A general usage question, reporting of a documentation error, or recommendation for a future product enhancement or modification. For production environments, there is low-to-no impact on your business or the performance or functionality of your system. For development environments, there is a medium-to-low impact on your business, but your business continues to function, including by using a procedural workaround.
+
+== Tips to create a good support case ==
+
+# Fill out the account number, your name, it is recommended to be individual instead global account.
+# Select the product that it is affected.
+# Version of the product.
+# Problem statement should be precise to see if they are any KCS that help you on the resolution. Please read the KCS suggested before open a case. Remember use the name of the component that you are having issue – Ceph …. , Nova …. Keywords are very important.
+# Explain your issue with the maximum details and add the commands that you are using with outputs.
+# Problem statement should be descriptive like: [Component][Region] Issue description.<br />
+Examples would be:<br />
+''[Nova][NL Region] Nova fails on one compute''<br />
+''[Ceph][Singapore Region] Ceph without OSD''
+# Explain your issue with the maximum details and add the commands that you are using with outputs.
+
+[[File:images/support/portal-ss.png|thumb|none|alt=Portal: case|Portal: case]]
+
+# It is important to put the environment that it is affected, pre production, production and what region is affecting, London, New York<br />
+Remember the severity levels and assign it properly.
+# Do attach sosreports of the servers/components affect for speedup the case: https://access.redhat.com/solutions/3592
+# Select server of support, add premium any time that you have the option.
+
+[[File:images/support/portal-ss-2.png|thumb|none|alt=Portal: case details|Portal: case details]]
+
+# Select severity level.
+# Add into notification to someone or distribution list.
+# If available, select a case group to notify other member, per example Cloud, alert all member of Cloud from your team and they could work on the case too.
+
+[[File:images/support/portal-ss-3.png|thumb|none|alt=Portal: set severity and add notification|Portal: set severity and add notification]]
